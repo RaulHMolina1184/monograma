@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monograma — Sitio en construcción</title>
 <meta name="description" content="Nuestro sitio está en proceso de construcción.">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #1F1F1F;
-    --ink: #FAF8F3;
-    --muted: #E53935;
+    --bg: #000000;
+    --ink: #f5f5f2;
+    --muted: #8a8a86;
     --font: 'Barlow Semi Condensed', 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif;
   }
   *{ margin:0; padding:0; box-sizing:border-box; }
@@ -35,6 +36,13 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+  }
+
+  .logo{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: clamp(28px, 5vw, 44px);
   }
 
   .message{
@@ -93,6 +101,8 @@
 <body>
 
   <main class="stage">
+    <img class="logo" src="assets/fullLogo.png" alt="Monograma">
+
     <p class="message">
       Nuestro sitio está en proceso de construcción. <br><br>
       ¡Pronto nos veremos!
